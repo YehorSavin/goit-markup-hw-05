@@ -15,6 +15,15 @@ html{
     --primary-bg-color: #FFFFFF;
 }
 
+.header{
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 1)
+}
+
 body{
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
@@ -23,6 +32,7 @@ body{
     line-height: 24px;
     letter-spacing: 0.03em;
     margin: 0;
+    padding-top: 80px;
 }
 
 .container{
@@ -201,6 +211,11 @@ color: #212121;
 
 .link-pf{
     text-decoration: none;
+}
+
+.link-pf:hover .overlay{
+    opacity: 1;
+    visibility: visible;
 }
 
 .paragraph-pf{
@@ -436,6 +451,45 @@ footer{
     width: 270px;
 }
 
+.img-pf{
+    display: block;
+    width: 370px;
+    height: 294px;
+}
+
+.overlay{
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms linear;
+
+    background: rgba(33, 150, 243, 0.9);
+}
+
+.overlay-paragraph{
+    display: flex;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    margin: 0;
+
+    letter-spacing: 0.03em;
+}
+
+.flex-element{
+    position: relative;
+}
 
 /* цвет основного текста #757575 */
 /* цвет вторичного текста #212121 */
