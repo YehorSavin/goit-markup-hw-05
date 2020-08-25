@@ -32,7 +32,7 @@
             <section class="hero">
             <div class="container hero-con">
                 <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-                <a class="button primary" href="" target="_blank">Заказать услугу</a>
+                <button class="button primary" href="" data-modal-open>Заказать услугу</button>
             </div>
             </section>
         <section class="section">
@@ -219,12 +219,12 @@
             </ul>
         </div>
         </section>
-        <div class="backdrop is-hidden">
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, tempora blanditiis. Libero alias iste hic! Facere ex, mollitia nulla, praesentium quae, aliquam iusto officia ab error similique corporis asperiores in.
                 </p>
-                <button>Закрыть</button>
+                <button data-modal-close>Закрыть</button>
             </div>
         </div>
     </main>
@@ -233,8 +233,8 @@
             <div class="foo-box">
                 <address class="address">
                     <ul class="list">
-                        <li><a href="/"><img src="./images/WebStudio.svg" alt="Логотип"></a></li>
-                        <li><p>г. Киев, пр-т Леси Украинки, 26</p></li>      
+                        <li><a href="/"><img src="./images/WebStudio2.svg" alt="Логотип"></a></li>
+                        <li><p class="footerp">г. Киев, пр-т Леси Украинки, 26</p></li>      
                         <li><a href="mailto:info@devstudio.com" class="link-mail">info@devstudio.com</a></li>
                         <li><a href="tel:+380961111111" class="link-tel">+38 096 111 11 11</a></li>
                     </ul>
@@ -260,6 +260,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./css/js/modal.js"></script>
 </body>
 
 </html>
